@@ -1,0 +1,25 @@
+{
+  "name": "AdBlock Project",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Block trackers from most mainstream ad/analytic companies.",
+  "browser_action": {
+    "default_icon": "on.png"
+  },
+	"icons": { "16": "b.png",
+           "48": "b.png",
+					"128": "b.png"	},
+  "background": {
+    "scripts": ["filters.js", "block.js"],
+	"content_scripts": [ 
+	  {
+	  	"matches": ["<all_urls>"],
+	  	"js": ["background.js", "antifb.js"],
+		"run_at": "document_start"
+	  }
+]
+  },
+  "permissions": ["http://*/*", "https://*/*", "webRequest", "webRequestBlocking", "webNavigation", "<all_urls>", "storage"],
+  "incognito": "spanning",
+  "web_accessible_resources": ["empty.gif"]
+}
