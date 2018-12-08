@@ -1,5 +1,5 @@
 //Script from https://github.com/radiospiel/Facebook-Blocker/blob/master/chrome/source/facebookBlocker/fbblock.js
-// Modified to include blocking of scripts on pixel.facebook.com
+// Modified to include blocking of scripts on pixel.facebook.com and added more page URLs
 
 const pageURL = document.domain;
 
@@ -9,7 +9,7 @@ document.addEventListener('load', handleBeforeLoadEvent, true);
 function handleBeforeLoadEvent(event) {
 	const element = event.target;
 
-	if(pageURL != 'www.facebook.com'){
+	if(pageURL != 'facebook.com', 'facebook.net', 'facebook.de', 'fbcdn.net', 'friendfeed.com'){
 		if(element.nodeName == 'IFRAME'){
 			if(element.src.toLowerCase().indexOf('facebook.com/extern/') > 0){
 				element.parentNode.removeChild(element);

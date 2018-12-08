@@ -1,6 +1,6 @@
 {
   "name": "AdBlock Project",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "manifest_version": 2,
   "description": "Block trackers from most mainstream ad/analytic companies.",
   "browser_action": {
@@ -15,7 +15,7 @@
 	  {
 	  	"matches": ["<all_urls>"],
 	  	"js": ["background.js", "antifb.js"],
-		"run_at": "document_start"
+		"run_at": "document_idle"
 	  }
 ]
   },
