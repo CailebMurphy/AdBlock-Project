@@ -1,8 +1,8 @@
 {
   "name": "AdBlock Project",
-  "version": "0.1.1E",
+  "version": "0.1.4",
   "manifest_version": 2,
-  "description": "Block trackers from most mainstream ad/analytic companies.",
+  "description": "Block trackers from most mainstream ad/analytic sources and many other smaller ad/analytic sources other adblockers don't find.",
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": "on.png"
