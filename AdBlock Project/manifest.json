@@ -1,6 +1,6 @@
 {
   "name": "AdBlock Project",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "manifest_version": 2,
   "description": "Block trackers from most mainstream ad/analytic sources and many other smaller ad/analytic sources other adblockers don't find.",
   "browser_action": {
